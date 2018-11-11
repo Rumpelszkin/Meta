@@ -1,5 +1,8 @@
 package com.company;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -11,10 +14,11 @@ int rozmiarListyTabu;
 int liczbaGenerowanychSasiadow;
 int liczbaCykli;
 
-ArrayList<Entity> bestList;
+
 ArrayList<Entity> listaTabu;
 ArrayList<Entity> helpList;
 
+Entity everBest;
 Entity actBest;
 Program program;
 
@@ -23,40 +27,57 @@ Program program;
         this.rozmiarListyTabu = rozmiarListyTabu;
         this.liczbaGenerowanychSasiadow = liczbaGenerowanychSasiadow;
         this.liczbaCykli = liczbaCykli;
-        bestList = new ArrayList<>();
         listaTabu = new ArrayList<>();
         helpList = new ArrayList<>();
         this.program = program;
+        everBest = new Entity();
+        everBest.setFitness(-Double.MAX_VALUE);
     }
 
-    public void runTabu(Entity startEntity){
+    public void runTabu(Entity startEntity) throws FileNotFoundException {
         actBest = startEntity;
-        for (int i = 0; i<liczbaCykli;i++){
-            actBest = generujJednegoZHelpList(actBest);
-            dodajDoTabuList(actBest);
-            bestList.add(actBest);
-        }
+        Random random = new Random();
+        PrintWriter pw = new PrintWriter(new File("Tabu\\Tabu"+random.nextInt() +".csv"));
+        StringBuilder sb = new StringBuilder();
 
+
+        for (int i = 0; i<liczbaCykli;i++){
+            generujJednegoZHelpList(actBest);
+            dodajDoTabuList(actBest);
+            sb.append(everBest.getFitness()+";"+ actBest.getFitness()+"\n");
+        }
+        pw.write(sb.toString());
+        pw.close();
+        System.out.println("Tabu done!");
     }
 
-    public Entity generujJednegoZHelpList(Entity entity){
-        ArrayList<Entity> tempHelpList = new ArrayList<>();
+    public void generujJednegoZHelpList(Entity entity){
+
         Random random = new Random();
         int liczbaMiast = entity.getCitiesArray().length;
         Entity tempEntity= new Entity();
         double bestFittnes = - Double.MAX_VALUE;
 
-
         for(int i = 0; i<liczbaGenerowanychSasiadow;i++){
 
             tempEntity = entity.swapCities(random.nextInt(liczbaMiast),random.nextInt(liczbaMiast));
             double tempFitnes = program.TTP1(tempEntity);
-            if(bestFittnes <tempFitnes){
+            if(bestFittnes <tempFitnes&&!tabuContains(tempEntity)){
                 actBest = tempEntity;
                 bestFittnes = tempFitnes;
             }
+            if(everBest.getFitness()<tempFitnes&&!tabuContains(tempEntity)){
+                everBest = tempEntity;
+            }
         }
-        return tempEntity;
+    }
+
+    public boolean tabuContains(Entity entity){
+        for(int i = 0; i<listaTabu.size();i++){
+            if(listaTabu.get(i).equals(entity)) return true;
+
+        }
+        return false;
     }
 
     public void dodajDoTabuList(Entity entity){

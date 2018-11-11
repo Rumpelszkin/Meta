@@ -113,6 +113,12 @@ public class Program {
         tabu.showDaWay();
     }
 
+    public void runTabu2(int rozmiarListyTabu,int liczbaGenerowanychSasiadow,int liczbaCykli) throws FileNotFoundException {
+        Tabu2 tabu = new Tabu2(rozmiarListyTabu,liczbaGenerowanychSasiadow,liczbaCykli,this);
+        EntityCreator entityCreator = new EntityCreator(xd);
+        tabu.runTabu(entityCreator.generateEntity());
+    }
+
     public void runSimulatedAnnealing() throws FileNotFoundException {
         EntityCreator entityCreator = new EntityCreator(xd);
         SA sa = new SA(500, 20, entityCreator.generateEntity2(), this);

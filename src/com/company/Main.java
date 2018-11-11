@@ -13,7 +13,7 @@ public class Main {
   //      p.runTabuAlgorithm(300);
     //    p.runTabuAlgorithm(300);
       //  p.runTabuAlgorithm(300);
-        p.runTabuAlgorithm1(30,40,50);
+        p.runTabu2(40,20,200);
 
        //p.runGeneticAlgorithm(100,100, 0, 0);
       //  p.runSimulatedAnnealing();
