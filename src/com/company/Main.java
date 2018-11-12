@@ -11,7 +11,7 @@ public class Main {
 
 
         //p.runTabu2(40,20,1000);
-        p.runSA(1000,10,5,40);
+        p.runSA(120,0.120,0.01,40);
        //p.runGeneticAlgorithm(100,100, 0, 0);
 
     }

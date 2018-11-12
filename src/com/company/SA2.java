@@ -52,7 +52,7 @@ public class SA2 {
                     everBest = temp;
                 }
 
-            }else if(random.nextDouble()> Math.exp(tempBest.getFitness()-temp.getFitness())/ACT_TEMP){
+            }else if(random.nextDouble()< Math.exp((tempBest.getFitness()-temp.getFitness())/ACT_TEMP)){
                 tempBest=temp;
 
             }
