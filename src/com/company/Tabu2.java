@@ -44,7 +44,7 @@ Program program;
         for (int i = 0; i<liczbaCykli;i++){
             generujJednegoZHelpList(actBest);
             dodajDoTabuList(actBest);
-            sb.append(everBest.getFitness()+";"+ actBest.getFitness()+"\n");
+            sb.append(everBest.getFitness()+","+ actBest.getFitness()+"\n");
         }
         pw.write(sb.toString());
         pw.close();

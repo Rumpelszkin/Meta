@@ -119,6 +119,11 @@ public class Program {
         tabu.runTabu(entityCreator.generateEntity());
     }
 
+    public void runSA(double temperaturaMaksymalna, double temperaturaMinimalna,double wartoscSpadkuTemperaturyWCzasie, int iloscGenerowanychSasiadow) throws FileNotFoundException {
+        SA2 sa = new SA2(temperaturaMaksymalna,temperaturaMinimalna,wartoscSpadkuTemperaturyWCzasie,iloscGenerowanychSasiadow,this);
+        EntityCreator entityCreator = new EntityCreator(xd);
+        sa.runSA(entityCreator.generateEntity());
+    }
     public void runSimulatedAnnealing() throws FileNotFoundException {
         EntityCreator entityCreator = new EntityCreator(xd);
         SA sa = new SA(500, 20, entityCreator.generateEntity2(), this);
