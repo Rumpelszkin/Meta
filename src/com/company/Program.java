@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Program {
 
@@ -53,7 +54,9 @@ public class Program {
         Population zero = populationCreator.createPopulation(populationSize);
         GA ga = new GA(Px, Pm, xd.itemsList, CAPACITY_OF_KNAPSACK);
 
-        PrintWriter pw = new PrintWriter(new File("aPx" + Px + "_Pm_" + Pm + ".csv"));
+        Random rand = new Random();
+
+        PrintWriter pw = new PrintWriter(new File("GA\\hard02\\aPx" + Px + "_Pm_" + Pm +"_"+rand.nextInt()+ ".csv"));
         StringBuilder sb = new StringBuilder();
 
         double best = 0;

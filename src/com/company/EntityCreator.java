@@ -72,6 +72,27 @@ public class EntityCreator {
         return titty;
     }
 
+    public void greedyKNP(Entity e){
+        ActualCaptacityOfKnapsack = 0;
+
+        int[] tablica = e.getCitiesArray();
+
+        for (int i = 0; i < numberOfItems; i++) {
+            e.getItemsArray()[i] = -1;
+        }
+
+        for(int i = numberOfCities-1;i!=0;i--){
+            for(int j = 0;j<numberOfItems;j++){
+                if(tablica[i]==loader.itemsList.get(j).getAssignedNode()&&(ActualCaptacityOfKnapsack+loader.itemsList.get(j).getWeight())<= captacityOfKnapsack ){
+                    e.getItemsArray()[j]=tablica[i];
+                    ActualCaptacityOfKnapsack += loader.itemsList.get(j).getWeight();
+                }
+            }
+        }
+
+    }
+
+
     public Entity generateEntity2(){
 
         ActualCaptacityOfKnapsack=0;

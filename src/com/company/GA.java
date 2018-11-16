@@ -38,8 +38,8 @@ public class GA {
 
             boolean flag = true;
             while (flag){
-                x = tournament(5, population);
-             y = tournament(5, population);
+                x = tournament(20, population);
+             y = tournament(20, population);
             if(x!=y) flag = false;
         }
             newPop.add(mutate(fix(cross(startPop.get(x),startPop.get(y)))));

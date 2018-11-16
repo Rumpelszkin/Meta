@@ -37,7 +37,7 @@ Program program;
     public void runTabu(Entity startEntity) throws FileNotFoundException {
         actBest = startEntity;
         Random random = new Random();
-        PrintWriter pw = new PrintWriter(new File("Tabu\\Tabu"+random.nextInt() +".csv"));
+        PrintWriter pw = new PrintWriter(new File("Tabu\\hard02\\Tabu"+random.nextInt() +".csv"));
         StringBuilder sb = new StringBuilder();
 
 

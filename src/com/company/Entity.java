@@ -24,7 +24,7 @@ public class Entity{
         for(int i=0; i<e.itemsArray.length;i++){
             this.itemsArray[i] = new Integer(e.itemsArray[i]);
         }
-
+        fitness = e.getFitness();
     }
     public int[] getCitiesArray() {
         return citiesArray;
@@ -49,6 +49,8 @@ public class Entity{
     public void setFitness(double fitness) {
         this.fitness = fitness;
     }
+
+
 
     @Override
     public boolean equals(Object obj){

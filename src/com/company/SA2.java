@@ -32,36 +32,72 @@ public class SA2 {
     }
     public void runSA(Entity startEntity) throws FileNotFoundException {
 
-        actBest = startEntity;
+     //   actBest = startEntity;
+     //   program.TTP1(actBest);
+        EntityCreator entityCreator= new EntityCreator(program.xd);
         Random random = new Random();
-        PrintWriter pw = new PrintWriter(new File("SA\\SA"+random.nextInt() +".csv"));
+        PrintWriter pw = new PrintWriter(new File("SA\\hard02\\SA"+random.nextInt() +".csv"));
         StringBuilder sb = new StringBuilder();
 
         int liczbaMiast = startEntity.getCitiesArray().length;
 
 
+        program.TTP1(startEntity);
+        Entity roundBest = startEntity;
+        Entity everBest = new Entity(startEntity);
+        Entity temp;
+
+
+
         while(ACT_TEMP>MIN_TEMP){
 
-            Entity tempBest = actBest;
+
             for(int i =0; i<iloscGenerowanychSasiadow;i++){
-                Entity temp = actBest.swapCities(random.nextInt(liczbaMiast),random.nextInt(liczbaMiast));
+
+                Entity tempp = roundBest.swapCities(random.nextInt(liczbaMiast),random.nextInt(liczbaMiast));
+                entityCreator.greedyKNP(tempp);
+                program.TTP1(tempp);
+
+                if(tempp.getFitness()>roundBest.getFitness()){
+                    roundBest = tempp;
+
+
+                }else if(random.nextDouble()< Math.exp((tempp.getFitness()-everBest.getFitness())/ACT_TEMP)){
+                    roundBest=tempp;
+
+                }
+                if(roundBest.getFitness()>everBest.getFitness()){
+                    everBest = new Entity(tempp);
+                }
+            }
+
+
+
+
+     /*   while(ACT_TEMP>MIN_TEMP){
+
+            Entity tempBest = new Entity(actBest);
+
+            for(int i =0; i<iloscGenerowanychSasiadow;i++){
+                Entity temp = tempBest.swapCities(random.nextInt(liczbaMiast),random.nextInt(liczbaMiast));
                 program.TTP1(temp);
             if(temp.getFitness()>actBest.getFitness()){
-                tempBest = temp;
+                tempBest = new Entity(temp);
                 if(tempBest.getFitness()>everBest.getFitness()){
-                    everBest = temp;
+                    everBest = new Entity(temp);
                 }
 
             }else if(random.nextDouble()< Math.exp((tempBest.getFitness()-temp.getFitness())/ACT_TEMP)){
-                tempBest=temp;
+                tempBest=new Entity(temp);
 
             }
             }
-            actBest = tempBest;
-
-            sb.append(everBest.getFitness()+","+ actBest.getFitness()+"\n");
-            funkcjaZmianyTemperatury();
+            actBest = new Entity(tempBest);
+*/
+            sb.append(everBest.getFitness()+","+ roundBest.getFitness()+"\n");
             czas++;
+            funkcjaZmianyTemperatury();
+
         }
 
         pw.write(sb.toString());

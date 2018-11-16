@@ -6,13 +6,13 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         String location = "C:\\Users\\Max\\Desktop\\Study\\Metaheurystyki\\ttp_student\\";
-        Loader xd = new Loader(location + "easy_0.ttp");
+        Loader xd = new Loader(location + "hard_2.ttp");
         Program p = new Program(xd);
 
-
-        //p.runTabu2(40,20,1000);
-        p.runSA(120,0.120,0.01,40);
-       //p.runGeneticAlgorithm(100,100, 0, 0);
-
+for(int i = 0; i<10;i++) {
+    p.runTabu2(40, 20, 700);
+    p.runSA(1200, 10, 0.1, 40);
+    p.runGeneticAlgorithm(100, 300, 0.3, 0.1);
+}
     }
 }
