@@ -24,6 +24,31 @@ public class Population {
         return populacja;
     }
 
+    public void ocenPopulacje(Program program){
+
+        best = -Double.MAX_VALUE;
+        avg = 0;
+        worst = Double.MAX_VALUE;
+        bestEntity = new Entity();
+        bestEntity.setFitness(best);
+
+        for(int i = 0;i<populacja.size();i++){
+            program.TTP1(populacja.get(i));
+            if(best< populacja.get(i).getFitness())
+            {
+                best = populacja.get(i).getFitness();
+                bestEntity = populacja.get(i);
+
+            }
+            if(worst> populacja.get(i).getFitness()){
+                worst = populacja.get(i).getFitness();
+
+            }
+            avg += populacja.get(i).getFitness();
+        }
+        avg /=populacja.size();
+    }
+
     public void setPopulacja(ArrayList<Entity> populacja) {
         this.populacja = populacja;
     }
