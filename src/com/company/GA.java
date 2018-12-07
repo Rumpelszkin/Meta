@@ -10,19 +10,21 @@ public class GA {
     ArrayList<Item> itemArrayList;
     double CAPACITY_OF_KNAPSACK;
     Random rand;
+    EntityCreator entityCreator;
 
-    public GA(double px, double pm, ArrayList<Item> itemArrayList, double CAPACITY_OF_KNAPSACK) {
+    public GA(double px, double pm, ArrayList<Item> itemArrayList, double CAPACITY_OF_KNAPSACK, Program program) {
         Px = px;
         Pm = pm;
         this.itemArrayList = itemArrayList;
         this.CAPACITY_OF_KNAPSACK = CAPACITY_OF_KNAPSACK;
         rand = new Random();
+
+        entityCreator = new EntityCreator(program.xd);
     }
 
     public Population runGA(Population population){
 
         ArrayList<Entity> startPop = population.getPopulacja();
-
         int secondToMutationIndex;
         ArrayList<Entity> newPop = new ArrayList<>();
 
@@ -43,6 +45,7 @@ public class GA {
             if(x!=y) flag = false;
         }
             newPop.add(mutate(fix(cross(startPop.get(x),startPop.get(y)))));
+
         }
 
         Population newPopulation = new Population(newPop);
@@ -86,6 +89,30 @@ public class GA {
             }
         }
 
+        int[] lista = entity.getCitiesArray();
+        ArrayList<Integer> listaA = new ArrayList<Integer>();
+        ArrayList<Integer> listaB = new ArrayList<Integer>();
+
+
+
+        for(int i = 0; i<lista.length;i++){
+            if(!listaA.contains(lista[i])) listaA.add(lista[i]);
+            else lista[i]=-1;
+            listaB.add(i);
+        }
+        for(int i = 0; i<lista.length;i++){
+            listaB.remove(new Integer(lista[i]));
+        }
+        for(int i = 0;i<lista.length;i++){
+            if(lista[i]==-1){
+                lista[i]= listaB.get(0);
+                listaB.remove(new Integer(lista[i]));
+            }}
+
+
+        /*
+
+
         int fixCounter = 100;
         int fixItemIndex;
         while(fixCounter>0&& actualKnapsackWeight<CAPACITY_OF_KNAPSACK){
@@ -95,12 +122,13 @@ public class GA {
                 actualKnapsackWeight += itemArrayList.get(fixItemIndex).getWeight();
             }
         fixCounter--;
-        }
+        }*/
         return entity;
     }
 
     public Entity mutate(Entity entity){
         entity.mutuj(Pm);
+        entityCreator.greedyKNP(entity);
         return entity;
     }
 

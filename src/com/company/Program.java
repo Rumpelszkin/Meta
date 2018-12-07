@@ -5,6 +5,7 @@ import java.awt.image.renderable.RenderableImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -52,17 +53,20 @@ public class Program {
     public void runGeneticAlgorithm(int populationSize, int populationsNumbes, double Px, double Pm) throws FileNotFoundException {
         PopulationCreator populationCreator = new PopulationCreator(xd);
         Population zero = populationCreator.createPopulation(populationSize);
-        GA ga = new GA(Px, Pm, xd.itemsList, CAPACITY_OF_KNAPSACK);
+        GA ga = new GA(Px, Pm, xd.itemsList, CAPACITY_OF_KNAPSACK,this);
 
         Random rand = new Random();
 
-        PrintWriter pw = new PrintWriter(new File("GA\\hard02\\aPx" + Px + "_Pm_" + Pm +"_"+rand.nextInt()+ ".csv"));
+        PrintWriter pw = new PrintWriter(new File("SAGA\\ga\\hard\\aPx" + Px + "_Pm_" + Pm +"_"+rand.nextInt()+ ".csv"));
         StringBuilder sb = new StringBuilder();
 
         double best = 0;
         double worst = Double.MAX_VALUE;
         double avg = 0;
         int bestIndex = 0;
+
+      //  Tabu2 tabu2 = new Tabu2(20,10,20,this);
+
 
         for (int rounds = 0; rounds < populationsNumbes; rounds++) {
 
@@ -95,6 +99,128 @@ public class Program {
         pw.close();
         System.out.println("done!");
     }
+
+
+
+public void runSAinitGA(int populationSize, int populationsNumbes, double Px, double Pm, double temperaturaMaksymalna, double temperaturaMinimalna,double wartoscSpadkuTemperaturyWCzasie, int iloscGenerowanychSasiadow) throws FileNotFoundException{
+    SA2 sa = new SA2(temperaturaMaksymalna,temperaturaMinimalna,wartoscSpadkuTemperaturyWCzasie,iloscGenerowanychSasiadow,this);
+    EntityCreator entityCreator = new EntityCreator(xd);
+    ArrayList<Entity> initPop = new ArrayList<Entity>();
+
+    for(int i = 0; i< populationSize;i++){
+            initPop.add(sa.runSA(entityCreator.generateEntity()));
+            sa = new SA2(temperaturaMaksymalna,temperaturaMinimalna,wartoscSpadkuTemperaturyWCzasie,iloscGenerowanychSasiadow,this);
+    }
+
+    Population zero = new Population(initPop);
+    GA ga = new GA(Px, Pm, xd.itemsList, CAPACITY_OF_KNAPSACK,this);
+
+    Random rand = new Random();
+
+    PrintWriter pw = new PrintWriter(new File("SAGA\\sa\\hard\\aPx" + Px + "_Pm_" + Pm +"_"+rand.nextInt()+ ".csv"));
+    StringBuilder sb = new StringBuilder();
+
+    double best = 0;
+    double worst = Double.MAX_VALUE;
+    double avg = 0;
+    int bestIndex = 0;
+
+    //  Tabu2 tabu2 = new Tabu2(20,10,20,this);
+
+
+    for (int rounds = 0; rounds < populationsNumbes; rounds++) {
+
+        best = 0;
+        worst = Double.MAX_VALUE;
+        avg = 0;
+
+        for (int i = 0; i < populationSize; i++) {
+            double temp = TTP1(zero.getPopulacja().get(i));
+            if (temp > best) {
+                zero.setBest(temp);
+                zero.setBestEntity(zero.getPopulacja().get(i));
+                best = temp;
+            }
+            if (temp < worst) {
+                zero.setWorst(temp);
+                worst = temp;
+            }
+            avg += temp;
+        }
+        avg /= populationSize;
+        zero.setAvg(avg);
+        sb.append(zero.toString());
+        //----- 1. populacja oceniona dodajemy wyniki do csv!!!!!
+
+        zero = new Population(ga.runGA(zero));
+    }
+
+    pw.write(sb.toString());
+    pw.close();
+    System.out.println("SAinitGAdone!");
+
+
+
+
+}
+
+public void runGATSreniscance(int populationSize, int populationsNumbes, double Px, double Pm, int rozmiarListyTabu, int liczbaGenerowanychSasiadow, int liczbaCykli, int coIleTabu) throws FileNotFoundException {
+    PopulationCreator populationCreator = new PopulationCreator(xd);
+    Population zero = populationCreator.createPopulation(populationSize);
+    GA ga = new GA(Px, Pm, xd.itemsList, CAPACITY_OF_KNAPSACK,this);
+
+    Random rand = new Random();
+
+    PrintWriter pw = new PrintWriter(new File("SAGA\\ts\\hard\\aPx" + Px + "_Pm_" + Pm +"_"+rand.nextInt()+ ".csv"));
+    StringBuilder sb = new StringBuilder();
+
+    double best = 0;
+    double worst = Double.MAX_VALUE;
+    double avg = 0;
+    int bestIndex = 0;
+
+      Tabu2 tabu2 = new Tabu2(rozmiarListyTabu,liczbaGenerowanychSasiadow,liczbaCykli,this);
+
+
+    for (int rounds = 0; rounds < populationsNumbes; rounds++) {
+
+        best = 0;
+        worst = Double.MAX_VALUE;
+        avg = 0;
+
+        for (int i = 0; i < populationSize; i++) {
+            double temp = TTP1(zero.getPopulacja().get(i));
+            if (temp > best) {
+                zero.setBest(temp);
+                zero.setBestEntity(zero.getPopulacja().get(i));
+                best = temp;
+            }
+            if (temp < worst) {
+                zero.setWorst(temp);
+                worst = temp;
+            }
+            avg += temp;
+        }
+        avg /= populationSize;
+        zero.setAvg(avg);
+        sb.append(zero.toString());
+        //----- 1. populacja oceniona dodajemy wyniki do csv!!!!!
+
+        if(rounds%coIleTabu ==0 && rounds != 0){
+            for(int ii = 0; ii<zero.getPopulacja().size();ii++){
+                Entity e = new Entity(tabu2.runGATabu(zero.getPopulacja().get(ii)));
+                zero.getPopulacja().set(ii,e);
+            }
+        }
+        else{
+        zero = new Population(ga.runGA(zero));
+    }}
+
+    pw.write(sb.toString());
+    pw.close();
+    System.out.println("done!");
+}
+
 
     public void runTabuAlgorithm(int rounds) throws FileNotFoundException {
         EntityCreator entityCreator = new EntityCreator(xd);

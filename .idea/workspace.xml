@@ -6,9 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="691aa81f-ca21-4314-9dbe-d7bc4281d72b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/GATS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/GATS2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Population.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/GA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/GA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/Population.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/Population.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Meta/com/company/SA2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Meta/com/company/SA2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GATS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GATS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/SA2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SA2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Tabu2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Tabu2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,67 +76,73 @@
     <session id="681919320">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="9" />
-          <entry key="java" value="20" />
+          <entry key="csv" value="12" />
+          <entry key="java" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="24" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4395" />
-          <entry key="txt" value="19" />
+          <entry key="java" value="6183" />
+          <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4395" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="JAVA" value="6183" />
+          <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GATS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="262">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#GATS#0;class#GATS#0" />
-                <element signature="method#runGATS#0;class#GATS#0" />
                 <element signature="method#tournament#0;class#GATS#0" />
                 <element signature="method#cross#0;class#GATS#0" />
               </folding>
@@ -135,10 +153,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="103" column="22" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
+            <state relative-caret-position="296">
+              <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
               <folding>
-                <element signature="method#fix#0;class#GA#0" />
+                <element signature="e#2805#2814#0" expanded="true" />
+                <element signature="e#2867#2876#0" expanded="true" />
                 <element signature="method#tournament#0;class#GA#0" />
               </folding>
             </state>
@@ -148,7 +167,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Population.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
+            <state relative-caret-position="443">
               <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="e#1843#1844#0" expanded="true" />
@@ -159,15 +178,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Program.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Tabu2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
+            <state relative-caret-position="-129">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Tabu2#0;class#Tabu2#0" />
+                <element signature="method#tabuContains#0;class#Tabu2#0" />
+                <element signature="method#dodajDoTabuList#0;class#Tabu2#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding>
                 <element signature="method#Program#0;class#Program#0" />
-                <element signature="method#runGeneticAlgorithm#0;class#Program#0" />
+                <element signature="e#3765#3773#0" expanded="true" />
                 <element signature="method#runTabuAlgorithm#0;class#Program#0" />
+                <element signature="method#runTabuAlgorithm1#0;class#Program#0" />
+                <element signature="method#runTabu2#0;class#Program#0" />
                 <element signature="method#runSimulatedAnnealing#0;class#Program#0" />
                 <element signature="method#refreshActualSpeed#0;class#Program#0" />
                 <element signature="method#TTP1#0;class#Program#0" />
@@ -179,19 +214,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/PopulationCreator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+            <state relative-caret-position="510">
+              <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
               <folding>
                 <element signature="method#Entity#2;class#Entity#0" />
                 <element signature="method#equals#0;class#Entity#0" />
@@ -229,6 +255,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -238,15 +269,16 @@
         <option value="$PROJECT_DIR$/src/com/company/Loader.java" />
         <option value="$PROJECT_DIR$/src/com/company/SA.java" />
         <option value="$PROJECT_DIR$/src/com/company/Tabu.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Entity.java" />
         <option value="$PROJECT_DIR$/src/com/company/EntityCreator.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GA.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Program.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Tabu2.java" />
-        <option value="$PROJECT_DIR$/src/com/company/SA2.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Population.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SA2.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GA.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Entity.java" />
         <option value="$PROJECT_DIR$/src/com/company/GATS.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Tabu2.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GATS2.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Program.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -257,17 +289,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="701" />
+    <option name="y" value="42" />
+    <option name="width" value="872" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +310,11 @@
               <item name="Meta" type="b2602c69:ProjectViewProjectNode" />
               <item name="Meta" type="462c0819:PsiDirectoryNode" />
               <item name="GA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Meta" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Meta" type="462c0819:PsiDirectoryNode" />
+              <item name="SAGA" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Meta" type="b2602c69:ProjectViewProjectNode" />
@@ -296,16 +332,22 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543401137357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544160421969" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-otp" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\Documents\GitHub\Meta\src\com\company" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,7 +408,10 @@
       <workItem from="1542316133600" duration="1888000" />
       <workItem from="1542318307122" duration="9702000" />
       <workItem from="1543266910658" duration="3168000" />
-      <workItem from="1543400347189" duration="788000" />
+      <workItem from="1543400347189" duration="1555000" />
+      <workItem from="1543669784785" duration="29000" />
+      <workItem from="1544051676956" duration="314000" />
+      <workItem from="1544087723713" duration="19862000" />
     </task>
     <task id="LOCAL-00001" summary="check SA2">
       <created>1541984806250</created>
@@ -382,11 +427,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542010794357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GATS">
+      <created>1543401300240</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543401300240</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97127000" />
+    <option name="totallyTimeSpent" value="118099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,24 +451,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Learn" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1705757" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.075159915" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50586355" side_tool="true" visible="true" weight="0.23210412" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50586355" side_tool="true" weight="0.23210412" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49413645" weight="0.43058568" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49932885" weight="0.40546447" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49413645" visible="true" weight="0.36442515" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49932885" weight="0.40455532" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49840087" weight="0.3264642" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -431,6 +482,37 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.075159915" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50586355" side_tool="true" weight="0.23210412" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49413645" weight="0.36442515" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.49932885" weight="0.40455532" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49840087" weight="0.3264642" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -441,16 +523,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="check SA2" />
     <MESSAGE value="check SA2 too ;x" />
-    <option name="LAST_COMMIT_MESSAGE" value="check SA2 too ;x" />
+    <MESSAGE value="GATS" />
+    <option name="LAST_COMMIT_MESSAGE" value="GATS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Tabu2.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/src/com/company/GA.java</url>
+          <line>103</line>
           <properties />
-          <option name="timeStamp" value="97" />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/GA.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -465,10 +554,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tabu1055669718.csv" />
-    <entry file="file://$PROJECT_DIR$/Tabu2062546451.csv" />
-    <entry file="file://$PROJECT_DIR$/Tabu1171140660.csv" />
-    <entry file="file://$PROJECT_DIR$/Tabu471989768.csv" />
     <entry file="file://$PROJECT_DIR$/Tabu1191210240.csv" />
     <entry file="file://$PROJECT_DIR$/Tabu261109711.csv" />
     <entry file="file://$PROJECT_DIR$/Tabu765106008.csv" />
@@ -523,29 +608,6 @@
     <entry file="file://$PROJECT_DIR$/SA/SA393068465.csv" />
     <entry file="file://$PROJECT_DIR$/SA/SA1171519959.csv" />
     <entry file="file://$PROJECT_DIR$/SA/SA1146719813.csv" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/SA2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Tabu2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Tabu2#0;class#Tabu2#0" />
-            <element signature="method#tabuContains#0;class#Tabu2#0" />
-            <element signature="method#dodajDoTabuList#0;class#Tabu2#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/PopulationCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -553,21 +615,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Population.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/SA2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="1017">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
           <folding>
-            <element signature="e#1843#1844#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -585,39 +639,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GA.java">
+    <entry file="file://$PROJECT_DIR$/SAGA/aPx0.3_Pm_0.01_1322811586.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="103" column="22" lean-forward="true" selection-start-line="103" selection-start-column="22" selection-end-line="103" selection-end-column="22" />
-          <folding>
-            <element signature="method#fix#0;class#GA#0" />
-            <element signature="method#tournament#0;class#GA#0" />
-          </folding>
+        <state relative-caret-position="-867">
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Program.java">
+    <entry file="file://$PROJECT_DIR$/SAGA/ga/aPx0.0_Pm_0.0_-1208995685.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SAGA/ga/aPx0.3_Pm_0.01_-1185851096.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="51" column="130" selection-start-line="51" selection-start-column="130" selection-end-line="51" selection-end-column="130" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Program#0;class#Program#0" />
-            <element signature="method#runGeneticAlgorithm#0;class#Program#0" />
-            <element signature="method#runTabuAlgorithm#0;class#Program#0" />
-            <element signature="method#runSimulatedAnnealing#0;class#Program#0" />
-            <element signature="method#refreshActualSpeed#0;class#Program#0" />
-            <element signature="method#TTP1#0;class#Program#0" />
-            <element signature="method#fillDistanceMatrix#0;class#Program#0" />
-            <element signature="method#showDistanceMatrix#0;class#Program#0" />
-          </folding>
+        <state relative-caret-position="1431">
+          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="510">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
           <folding>
             <element signature="method#Entity#2;class#Entity#0" />
             <element signature="method#equals#0;class#Entity#0" />
@@ -627,16 +669,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GATS.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/GA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="296">
+          <caret line="108" column="48" selection-start-line="108" selection-start-column="48" selection-end-line="108" selection-end-column="48" />
+          <folding>
+            <element signature="e#2805#2814#0" expanded="true" />
+            <element signature="e#2867#2876#0" expanded="true" />
+            <element signature="method#tournament#0;class#GA#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GATS2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1367">
+          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Population.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Tabu2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#GATS#0;class#GATS#0" />
-            <element signature="method#runGATS#0;class#GATS#0" />
+            <element signature="method#Tabu2#0;class#Tabu2#0" />
+            <element signature="method#tabuContains#0;class#Tabu2#0" />
+            <element signature="method#dodajDoTabuList#0;class#Tabu2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GATS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#tournament#0;class#GATS#0" />
             <element signature="method#cross#0;class#GATS#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="method#Program#0;class#Program#0" />
+            <element signature="e#3765#3773#0" expanded="true" />
+            <element signature="method#runTabuAlgorithm#0;class#Program#0" />
+            <element signature="method#runTabuAlgorithm1#0;class#Program#0" />
+            <element signature="method#runTabu2#0;class#Program#0" />
+            <element signature="method#runSimulatedAnnealing#0;class#Program#0" />
+            <element signature="method#refreshActualSpeed#0;class#Program#0" />
+            <element signature="method#TTP1#0;class#Program#0" />
+            <element signature="method#fillDistanceMatrix#0;class#Program#0" />
+            <element signature="method#showDistanceMatrix#0;class#Program#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

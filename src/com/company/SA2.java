@@ -30,14 +30,14 @@ public class SA2 {
         everBest = new Entity();
         everBest.setFitness(-Double.MAX_VALUE);
     }
-    public void runSA(Entity startEntity) throws FileNotFoundException {
+    public Entity runSA(Entity startEntity) throws FileNotFoundException {
 
      //   actBest = startEntity;
      //   program.TTP1(actBest);
         EntityCreator entityCreator= new EntityCreator(program.xd);
         Random random = new Random();
-        PrintWriter pw = new PrintWriter(new File("SA\\hard02\\SA"+random.nextInt() +".csv"));
-        StringBuilder sb = new StringBuilder();
+      //  PrintWriter pw = new PrintWriter(new File("SA\\hard02\\SA"+random.nextInt() +".csv"));
+       // StringBuilder sb = new StringBuilder();
 
         int liczbaMiast = startEntity.getCitiesArray().length;
 
@@ -94,15 +94,17 @@ public class SA2 {
             }
             actBest = new Entity(tempBest);
 */
-            sb.append(everBest.getFitness()+","+ roundBest.getFitness()+"\n");
+         //   sb.append(everBest.getFitness()+","+ roundBest.getFitness()+"\n");
             czas++;
             funkcjaZmianyTemperatury();
 
         }
 
-        pw.write(sb.toString());
-        pw.close();
+      //  pw.write(sb.toString());
+       // pw.close();
         System.out.println("SA done!");
+
+        return everBest;
     }
 
     public void funkcjaZmianyTemperatury(){

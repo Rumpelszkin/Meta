@@ -51,6 +51,17 @@ Program program;
         System.out.println("Tabu done!");
     }
 
+    public Entity runGATabu(Entity entity){
+        actBest = entity;
+        Random random = new Random();
+        for(int i= 0 ; i <liczbaCykli;i++){
+            generujJednegoZHelpList(actBest);
+            dodajDoTabuList(actBest);
+        }
+        return actBest;
+
+    }
+
     public void generujJednegoZHelpList(Entity entity){
 
         Random random = new Random();

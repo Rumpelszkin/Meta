@@ -68,7 +68,7 @@ public class Entity{
     public void mutuj(double Pm){
         Random rand = new Random();
         for(int i =0; i<citiesArray.length;i++){
-            if(Pm<=rand.nextDouble()){
+            if(Pm>=rand.nextDouble()){
                 int temp = rand.nextInt(citiesArray.length);
                 if(temp!=i){
                     int help = citiesArray[i];
